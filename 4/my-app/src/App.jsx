@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { ColoredMessage } from './components/ColoredMessage';
 
 export const App = () => {
@@ -7,6 +8,10 @@ export const App = () => {
     // setNum(prev + 1);
     setNum((prev) => prev + 1);
   }
+
+  useEffect(() => {
+    alert();
+  }, [num]);
 
   return (
     <div>
