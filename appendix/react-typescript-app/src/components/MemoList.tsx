@@ -26,6 +26,9 @@ export const MemoList: FC<Props> = props => {
   );
 };
 
+const SButton = styled.button`
+  margin-left: 16px;
+`;
 const SContainer = styled.div`
   border: solid 1px #ccc;
   padding: 16px;
